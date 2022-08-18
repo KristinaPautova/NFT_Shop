@@ -1,0 +1,16 @@
+.search{
+    border: solid 1px rgb(164, 164, 164);
+    border-radius: 5px;
+}
+
+.search:hover{
+    border: solid 1px gold;
+}
+
+.Search > .Mui-focused{
+    border: solid 1.5px gold;
+}
+
+.glass{
+    color: #707A8A;
+}

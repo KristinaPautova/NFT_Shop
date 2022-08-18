@@ -1,0 +1,30 @@
+.logo{
+    text-decoration: none;
+    color: black;
+}
+
+.logo:hover{
+    color: black;
+}
+
+.link{
+    color: rgb(215, 189, 86);
+}
+
+.link:hover{
+    color: rgb(252, 213, 53);
+}
+
+.active{
+    color: black;
+}
+
+.love{
+    color: rgb(215, 86, 101);
+}
+
+.love:hover{
+    color: rgb(252, 53, 60);
+}
+
+

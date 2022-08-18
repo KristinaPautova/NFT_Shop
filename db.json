@@ -1,0 +1,244 @@
+{
+  "nft": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "Ebisu_Normal",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1655485241035_klv0td3mx2zxf6oqq85y4rly25ld8bq2_400x400.png",
+      "creator": "Spirit Land",
+      "owner": "PvP NFT",
+      "price": 450,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "BBC Drop",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1655729011699_gar0qtvkdq4k9lp1ay05qcut8vdt0v8k_400x400.png",
+      "creator": "RabbitClub",
+      "owner": "Get_cool_NFT",
+      "price": 954,
+      "category": "Gaming"
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "Artur Lekano",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1655085319117_094aikdhfo6vmhwgjv8jt2ajy0bo5jxu_400x400.png",
+      "creator": "Anonymous-User-79239",
+      "owner": "NFTkingAK",
+      "price": 535,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "PUGCHAMP #762",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1660455550665_hangx29qdwdka8uxp0e0kt55b3t1rfnr_400x400.png",
+      "creator": "FitROfficial",
+      "owner": "Bunengzaikuiqianle",
+      "price": 425,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "title": "Guts Tiger",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656401020056_ibcu9yahandg7x5vzy6sla5qsz7lf9ew_400x400.png",
+      "creator": "Anonymous-User-79239",
+      "owner": "Anonymous-User-79239",
+      "price": 127,
+      "category": "Gaming"
+    },
+    {
+      "userId": 1,
+      "id": 6,
+      "title": "PeacePunks",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656401074330_nh0brkr3j02xz19yakcf7p084c51bp4o_400x400.png",
+      "creator": "StarSharks_NFT",
+      "owner": "Dom_Bebezito",
+      "price": 330,
+      "category": "Sports"
+    },
+    {
+      "userId": 1,
+      "id": 7,
+      "title": "Sylph",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656401331108_u8d4jsiwlt3zabd1gzh9fz4zcd343zxc_400x400.png",
+      "creator": "Anonymous-User-79239",
+      "owner": "ArtoGalleryNFT",
+      "price": 920,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 1,
+      "id": 8,
+      "title": "Michaela",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656402282766_1nj5bn5o3uewsdrte1bcp9fjbm8k56ne_400x400.png",
+      "creator": "TAP_FANTASY_METAVERS",
+      "owner": "APE_",
+      "price": 78,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 1,
+      "id": 9,
+      "title": "1-Star Cannon",
+      "img": "https://public.nftstatic.com/static/nft/zipped/08e0392065d942bfaaad0cea32f1cb64_zipped.png",
+      "creator": "Anonymous-User-79239",
+      "owner": "L0VE",
+      "price": 459,
+      "category": "Gaming"
+    },
+    {
+      "userId": 1,
+      "id": 10,
+      "title": "distinctio laborum",
+      "img": "https://public.nftstatic.com/static/nft/zipped/37665d1722504b719635dd6eda9df8d8_zipped.png",
+      "creator": "Anonymous-User-79239",
+      "owner": "Happy_Girl",
+      "price": 780,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 2,
+      "id": 11,
+      "title": "Courage",
+      "img": "https://public.nftstatic.com/static/nft/zipped/b51af34e863748769fa6c28d49c99fac_zipped.png",
+      "creator": "Anonymous-User-79239",
+      "owner": "ArtoGalleryNFT",
+      "price": 455,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 2,
+      "id": 12,
+      "title": "doloribus natus consectetur",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1652802417249_44xe1cyhdt1bgi6w2rlxwugli0fhzvcx_400x400.png",
+      "creator": "NFTBaza",
+      "owner": "Anonymous_5gwd",
+      "price": 535,
+      "category": "Gaming"
+    },
+    {
+      "userId": 2,
+      "id": 13,
+      "title": "Woman Warrior",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656402134518_he57wr78duxr3cavyz444fio1zba9t6j_400x400.png",
+      "creator": "Spirit Land",
+      "owner": "PvP NFT",
+      "price": 380,
+      "category": "Sports"
+    },
+    {
+      "userId": 2,
+      "id": 14,
+      "title": "NUCLEIC APE ",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656402053788_307hb7we0czyl1zwcvsy0j2irxshkzj6_400x400.png",
+      "creator": "NFTBaza",
+      "owner": "Dom_Bebezito",
+      "price": 679,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 2,
+      "id": 15,
+      "title": "Roooow",
+      "img": "https://public.nftstatic.com/static/nft/zipped/07124ba69f3548839e081d2b69d26139_zipped.jpg",
+      "creator": "NFTBaza",
+      "owner": "Bocha25",
+      "price": 221,
+      "category": "Gaming"
+    },
+    {
+      "userId": 2,
+      "id": 16,
+      "title": "Bumble",
+      "img": "https://public.nftstatic.com/static/nft/zipped/3a3d38ef51234443a49ad6453dda6002_zipped.png",
+      "creator": "Golden Tiger",
+      "owner": "Emoji NFT",
+      "price": 303,
+      "category": "Sports"
+    },
+    {
+      "userId": 2,
+      "id": 17,
+      "title": "Fancy Bear",
+      "img": "https://public.nftstatic.com/static/nft/zipped/6dbba19a3e1a4b2290ab6053060c2f87_zipped.png",
+      "creator": "Golden Tiger",
+      "owner": "Get_cool_NFT",
+      "price": 454,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 2,
+      "id": 18,
+      "title": " Artur Lekano",
+      "img": "https://public.nftstatic.com/static/nft/zipped/249a65e422304b8a9043581a752bb722_zipped.png",
+      "creator": "Proud Kitty Gang",
+      "owner": "APE_",
+      "price": 1200,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 2,
+      "id": 19,
+      "title": "NFT SOLDIER",
+      "img": "https://public.nftstatic.com/static/nft/zipped/6b0f2e6b2ca2457a81ac69250e7f0cee_zipped.png",
+      "creator": "TUD NFT",
+      "owner": "Emoji NFT",
+      "price": 670,
+      "category": "Gaming"
+    },
+    {
+      "userId": 2,
+      "id": 20,
+      "title": "rerum iure ut enim",
+      "img": "https://public.nftstatic.com/static/nft/zipped/10f0bd7a104149da9085e663a5f767eb_zipped.png",
+      "creator": "HALO OFFICIAL(BSC)",
+      "owner": "Alien world",
+      "price": 930,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 3,
+      "id": 21,
+      "title": "INCEPTION ",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656401813517_xog28g2epj7u5yuot4v30zwlkua57urg_400x400.png",
+      "creator": "AgeOfAngels",
+      "owner": "SUPER APE",
+      "price": 133,
+      "category": "Sports"
+    },
+    {
+      "userId": 3,
+      "id": 22,
+      "title": "BORED SLOTH",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656402018848_kse70cmrs7ibv537uvtdgkgw8fhw11ge_400x400.png",
+      "creator": "X World Games",
+      "owner": "ArchLoot Blindbox",
+      "price": 32,
+      "category": "Gaming"
+    },
+    {
+      "userId": 3,
+      "id": 23,
+      "title": "TUD #562",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656402056676_1mgdhjarfnh9km8xw2a214gmfef5h3pz_400x400.png",
+      "creator": "Bored Ape BSC",
+      "owner": "Star autographs",
+      "price": 534,
+      "category": "Collectibles"
+    },
+    {
+      "userId": 3,
+      "id": 24,
+      "title": " World Mystery Box 3",
+      "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1657639427748_dpknqkw39anqrn7m7vybmxh3z9te8auc_400x400.png",
+      "creator": "CryptoCyberWolfs",
+      "owner": "NFTpride",
+      "price": 203,
+      "category": "Gaming"
+    }
+  ]
+}

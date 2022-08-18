@@ -1,0 +1,81 @@
+.text__person{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 11px;
+}
+
+.person__gold{
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(201, 148, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.person__gold > img{
+    box-sizing: border-box;
+    margin: 0px 0px 0px 4px;
+    color: rgb(240, 185, 11);
+    font-size: 16px;
+    fill: rgb(240, 185, 11);
+    min-width: 16px;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+}
+
+.bsc{
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.person__price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.person__price > span{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    color: rgb(112, 122, 138);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+.person__price_left > img {
+    flex-shrink: 0;
+    width: 16px;
+    height: 24px;
+}
+
+.person__price_down {
+    margin-left: 5px;
+}
+
+.person__price_down > span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 24px;
+}
+
+.person__price_down > div{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(112, 122, 138);
+    text-align: end;
+}
+
+.person__price_left{
+    display: flex;
+}

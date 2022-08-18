@@ -1,0 +1,12 @@
+.slider{
+    display: flex;
+}
+
+.slider__filter{
+    display: flex;
+    column-gap: 77px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
