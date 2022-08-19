@@ -61,7 +61,7 @@ const NftList = () => {
 
     return (
         <>
-        {productObj ? (
+
         <div className='main_box'>
             <div className='search__box__bac'>
                <div className='search__box'>
@@ -75,6 +75,8 @@ const NftList = () => {
                 {productObj.map((item) => <NftCard product={item} key={item.id}/>)}
             </div>
             <div style={{ margin: "50px auto", textAlign: "center" }}>
+
+
                 <Pagination
                     count={+pageTotalCount}
                     variant="outlined"
@@ -84,8 +86,9 @@ const NftList = () => {
                         setPage(pageVal);
                     }}
                 />
+
             </div>
-        </div>) : (<h1>Loading...</h1>)}
+        </div>
         </>
     );
 };

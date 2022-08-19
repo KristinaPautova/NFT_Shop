@@ -11,6 +11,7 @@ export default function EditProduct() {
 
   const [editTitle, setEditTitle] = useState(productDetails.title);
   const [editPrice, setEditPrice] = useState(productDetails.price);
+  const [editOwner, setEditOwner] = useState(productDetails.owner);
   const [editImage, setEditImage] = useState(productDetails.img);
   const [editCreator, setEditCreator] = useState(
     productDetails.creator
@@ -23,6 +24,7 @@ export default function EditProduct() {
       !editPrice ||
       !editImage ||
       !editCreator ||
+        !editOwner ||
       !editCategory
     ) {
       alert("Введите все инпуты");
@@ -32,6 +34,7 @@ export default function EditProduct() {
       title: editTitle,
       price: parseInt(editPrice),
       img: editImage,
+      owner: editOwner,
       creator: editCreator,
       category: editCategory,
     };
@@ -80,6 +83,14 @@ export default function EditProduct() {
             variant="outlined"
             value={editCreator}
             onChange={(e) => setEditCreator(e.target.value)}
+          />
+          <TextField
+              sx={{ width: 300 }}
+              id="outlined-basic"
+              label="Creator"
+              variant="outlined"
+              value={editOwner}
+              onChange={(e) => setEditOwner(e.target.value)}
           />
           <TextField
             sx={{ width: 300 }}

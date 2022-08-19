@@ -28,8 +28,8 @@ const Favorites = () => {
 
             {favorites.products &&
             favorites.products.map((elem) => (
-                <div className='card'>
-                    <Card key='45' sx={{ maxWidth: 300 }}>
+                <div key={elem.item.id}  className='card'>
+                    <Card sx={{ maxWidth: 300 }}>
                         <Link to={`/nftDetails/${elem.item.id}`}>
                             <CardMedia
                                 component="img"

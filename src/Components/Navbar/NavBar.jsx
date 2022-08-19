@@ -54,26 +54,11 @@ const NavBar = () => {
                     <NavLink to="/">
                     <img width={130} src={logo} alt=""/>
                     </NavLink>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="/"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'Roboto',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'black',
-                            textDecoration: 'none',
-                            marginLeft: "10px",
-                        }}
-                    >
+
                         <NavLink className='logo' to="/">
                         NFT
                         </NavLink>
-                    </Typography>
+
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -104,22 +89,49 @@ const NavBar = () => {
                             }}
 
                         >
-                            <MenuItem  key="MarketPlace" onClick={handleCloseNavMenu}>
-                                <Typography  textAlign="center">Market Place</Typography>
-                            </MenuItem>
+
                             <MenuItem  key="Blog" onClick={handleCloseNavMenu}>
-                                <Typography  textAlign="center">Blog</Typography>
+                                <Link to='/tutorial' style={{textDecoration: "none", color: "black"}}>
+                                <Typography  textAlign="center">Tutorial</Typography>
+                                </Link>
                             </MenuItem>
+                            { user && (
+                                <MenuItem  key="MarketPlace" onClick={handleCloseNavMenu}>
+                                    <Link to='/marketPlace' style={{textDecoration: "none", color: "black"}}>
+                                        <Typography  textAlign="center">Market Place</Typography>
+                                    </Link>
+                                </MenuItem>
+                            )}
+
+                            { user && (
+                                <MenuItem  key="Cart" onClick={handleCloseNavMenu}>
+                                    <Link to='/cart' style={{textDecoration: "none", color: "black"}}>
+                                        <Typography  textAlign="center">Cart</Typography>
+                                    </Link>
+                                </MenuItem>
+                            )}
+                            { user && (
+                                <MenuItem  key="favorite" onClick={handleCloseNavMenu}>
+                                    <Link to='/favorite' style={{textDecoration: "none", color: "black"}}>
+                                        <Typography  textAlign="center">Favorites</Typography>
+                                    </Link>
+                                </MenuItem>
+                            )}
+
                             {admin === user.email && (
                             <MenuItem  key="AddNft" onClick={handleCloseNavMenu}>
+                                <Link to='/addNft' style={{textDecoration: "none", color: "black"}}>
                                 <Typography  textAlign="center">Add nft</Typography>
+                                </Link>
                             </MenuItem>
                             )}
                         </Menu>
                     </Box>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        <NavLink to='/marketPlace' style={{textDecoration:"none"}}>
+
+                        { user && (
+                        <NavLink to='/marketPlace' style={{textDecoration:"none", marginLeft:'10px'}}>
                         <Button
                             key='marketPlace'
                             onClick={handleCloseNavMenu}
@@ -128,13 +140,16 @@ const NavBar = () => {
                             Market Place
                         </Button>
                         </NavLink>
+                            )}
+                        <NavLink to='/tutorial' style={{textDecoration:"none"}}>
                         <Button
                             key='blog'
                             onClick={handleCloseNavMenu}
                             sx={{ my: 2, color: 'black', display: 'block' }}
                         >
-                            Blog
+                            Tutorial
                         </Button>
+                        </NavLink>
                         {admin === user.email && (
                         <NavLink to='/addNft' style={{textDecoration:"none"}}>
                         <Button

@@ -1,0 +1,140 @@
+.second-content {
+  margin: 100px;
+  padding-top: 20px;
+}
+
+.second-txx {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-r {
+  width: 450px;
+  padding-left: 50px;
+}
+
+.text-w {
+  font-size: 39px;
+  line-height: 40px;
+}
+
+.htwo {
+  margin-top: 100px;
+  padding-left: 28px;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.the-content {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 30px;
+  padding-bottom: 80px;
+}
+
+.tx-io {
+  width: 340px;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: -webkit-box;
+  /*word-break: break-word;*/
+  -webkit-box-orient: vertical;
+  font-weight: 500;
+}
+
+.tx-i {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-weight: 500;
+}
+.the-cont {
+  display: flex;
+  column-gap: 30px;
+}
+
+.ul-text {
+  padding-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+.ui-dw {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@media all and (max-width: 1030px) {
+  .second-txx{
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-w{
+    text-align: center;
+    font-size: calc(1.325rem + .9vw);
+  }
+}
+
+
+@media all and (max-width: 800px) {
+  .the-content > img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .the-cont > img{
+    width: 200px;
+    height: 150px;
+  }
+
+  .second-content {
+    margin: 20px;
+  }
+
+  .the-cont{
+    column-gap: 5px;
+  }
+
+  .the-content{
+    column-gap: 10px;
+  }
+}
+
+
+@media all and (max-width: 500px) {
+
+  iframe{
+    width: 310px;
+    height: 200px;
+  }
+
+  .text-r > span{
+    text-align: center;
+  }
+
+  .the-content{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .the-cont {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-r {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .tx-io{
+    text-align: center;
+  }
+}

@@ -8,6 +8,8 @@ import NFTList from "./Components/NFTList/NFTList";
 import NftDetails from "./Components/NFTDetails/NftDetails";
 import EditProduct from "./Components/EditProduct/EditProduct";
 import Favorites from "./Components/Favorites/Favorites";
+import Tutorial from "./Components/Tutorial/Tutorial";
+import Error from "./Components/Error/Error";
 
 const MainRouts = () => {
     return (
@@ -17,9 +19,11 @@ const MainRouts = () => {
             <Route path='/auth' element={<Auth/>}/>
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/favorite' element={<Favorites/>}/>
+            <Route path='/tutorial' element={<Tutorial/>}/>
             <Route path='/marketPlace' element={<NFTList/>}/>
             <Route path='/nftDetails/:id' element={<NftDetails/>}/>
             <Route path='/edit/:id' element={<EditProduct/>}/>
+            <Route path='*' element={<Error/>}/>
         </Routes>
     );
 };

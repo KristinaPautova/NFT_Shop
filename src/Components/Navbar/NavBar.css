@@ -1,6 +1,10 @@
 .logo{
     text-decoration: none;
     color: black;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 19px;
+    margin-left: 5px;
 }
 
 .logo:hover{
@@ -32,4 +36,9 @@
     .love{
         display: none;
     }
+
+    .link{
+        display: none;
+    }
+
 }

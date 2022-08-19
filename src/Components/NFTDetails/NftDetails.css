@@ -170,3 +170,21 @@ h4{
     justify-content: center;
     column-gap: 20px;
 }
+
+@media all and (max-width: 770px){
+    .details{
+        padding: 0;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+@media all and (max-width: 500px){
+    .details__ul{
+        width: 250px;
+    }
+    .details__left{
+        padding: 20px;
+    }
+}
+
