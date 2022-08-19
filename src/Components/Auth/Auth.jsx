@@ -44,6 +44,8 @@ export default function Auth() {
         setHasAccount,
     } = useContext(authContext);
 
+    // console.log(user.email)
+
     const navigate = useNavigate();
 
     const signIn = () => {

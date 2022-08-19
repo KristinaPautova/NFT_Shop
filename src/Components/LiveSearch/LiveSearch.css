@@ -14,3 +14,14 @@
 .glass{
     color: #707A8A;
 }
+
+.css-1kcggdq-MuiInputBase-root{
+    width: 50ch;
+}
+
+@media all and (max-width: 500px){
+
+    .css-1kcggdq-MuiInputBase-root{
+        width: 30ch;
+    }
+}

@@ -5,7 +5,7 @@ import fire from "../fire";
 
 export const authContext = createContext();
 
-
+export const admin = "admin@mail.com"
 
 const AuthContextProvider = ({children}) => {
     const [user, setUser] = useState('');

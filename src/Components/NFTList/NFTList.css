@@ -34,3 +34,12 @@
     background-color: #FAFAFA;
     width: 100%;
 }
+
+@media all and (max-width: 500px) {
+    .search__box {
+        display: flex;
+    }
+    .search__box__bac {
+        background-color: white;
+    }
+}

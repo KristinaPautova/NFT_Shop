@@ -7,6 +7,7 @@ import img5 from '../../image/content_giphy__2_.gif'
 import  {nftContext} from "../../context/NFTContextProvider";
 import {useNavigate} from "react-router-dom";
 import showToast from "../../helpers/ShowToast";
+import cart1 from '../../image/cart.png'
 
 const Cart = () => {
 
@@ -65,16 +66,17 @@ const Cart = () => {
 
         <div className="cart">
             {cart.products ? (
+                <>
+                {cart.products.length ? (
                 <div className="container">
             <table>
             <thead>
             <tr>
                 <th>NFT</th>
                 <th>Название</th>
-                <th>Владелец</th>
-                <th>Цена</th>
-                <th>Количество</th>
-                <th>Сумма продукта</th>
+                <th className='pers'>Владелец</th>
+                <th className='pers'>Цена</th>
+                <th>Цена в долларах</th>
             </tr>
             </thead>
             <tbody className="task-list">
@@ -84,13 +86,9 @@ const Cart = () => {
                         <img width={40} src={elem.item.img} alt={elem.item.title}/>
                     </td>
                     <td>{elem.item.title}</td>
-                    <td>{elem.item.creator}</td>
-                    <td>{elem.item.price}BUSD</td>
-                    <td>
-                        <input min = {1} type="number" value={elem.count} onChange={(e) =>
-                            changeProductCount(elem.item.id, e.target.value )}/>
-                    </td>
-                    <td>{elem.sumPrice}BUSD</td>
+                    <td className='pers'>{elem.item.creator}</td>
+                    <td className='pers'>{elem.item.price}BUSD</td>
+                    <td>{elem.sumPrice - 1}$</td>
                     <td>
                         <button onClick={() => deleteCartProduct(elem.item.id)}>Удалить</button>
                     </td>
@@ -98,9 +96,22 @@ const Cart = () => {
             ))}
              </tbody>
             </table>
-            <h4>Общая сумма: {cart.totalPrice}BUSD</h4>
+            <h4>Общая сумма: {cart.totalPrice} $</h4>
             <button className='table__button' onClick={()=> setMainBlock(true)}>Оформить заказ</button>
                 </div>
+                ) : (
+                    <div className="bgCart">
+                        <h1 style={{ margin: "0 auto"  }}>
+                            В данный момент корзина пустая
+                        </h1>
+                        <img
+                            id="nullCart"
+                            alt="notFound"
+                            src='https://diniya.ru/images/cart.png'
+                        />
+                    </div>
+                )}
+                </>
                 ): <h2>...Loading</h2> }
 
             {mainBlock && (
@@ -128,6 +139,7 @@ const Cart = () => {
                                    value={cvc}
                                    onChange={(e) => setCVC(e.target.value)}
                         />
+                            <h5 style={{paddingTop:'0', color:'rgba(0,0,0,0.32)'}}>Sum: {cart.totalPrice}$</h5>
                         <Button onClick={handleClick} variant="contained" disableElevation>
                             Add NFT
                         </Button>

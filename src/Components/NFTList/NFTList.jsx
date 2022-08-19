@@ -60,6 +60,8 @@ const NftList = () => {
     }, [searchParams, type, price, page]);
 
     return (
+        <>
+        {productObj ? (
         <div className='main_box'>
             <div className='search__box__bac'>
                <div className='search__box'>
@@ -83,7 +85,8 @@ const NftList = () => {
                     }}
                 />
             </div>
-        </div>
+        </div>) : (<h1>Loading...</h1>)}
+        </>
     );
 };
 

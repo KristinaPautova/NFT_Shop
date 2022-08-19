@@ -6,15 +6,17 @@ import NftContextProvider from "./context/NFTContextProvider";
 import AuthContextProvider from "./context/AuthContext";
 import CartContextProvider from "./context/CartContextProvider";
 import {ToastContainer} from "react-toastify";
+import FavoritesContextProvider from "./context/FavoritesContextProvider";
 
 
 function App() {
   return (
       <AuthContextProvider>
+          <FavoritesContextProvider>
           <CartContextProvider>
       <NftContextProvider>
          <NavBar/>
-          <div style={{marginTop:'60px'}}>
+          <div style={{marginTop:'50px'}}>
              <MainRouts/>
           </div>
           <Footer/>
@@ -31,6 +33,7 @@ function App() {
           />
       </NftContextProvider>
           </CartContextProvider>
+          </FavoritesContextProvider>
       </AuthContextProvider>
   );
 }

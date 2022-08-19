@@ -29,7 +29,7 @@ function Filter ({type, setType, price, setPrice}) {
 
             </RadioGroup>
         </FormControl>
-            <Box sx={{ width: 300 }}>
+            <Box sx={{ width: 285 }}>
                 <FormLabel id="demo-radio-buttons-group-label">По ценам</FormLabel>
             <Slider
                 sx={{ color: color}}

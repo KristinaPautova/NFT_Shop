@@ -14,15 +14,17 @@ import './NftCard.css'
 import {cartContext} from "../../context/CartContextProvider";
 import {checkProductInCart} from "../../helpers/cartFunctions";
 import {Link} from "react-router-dom";
+import {favoritesContext} from "../../context/FavoritesContextProvider";
 
 
 const NftCard = ({product}) => {
         const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
     const { addProductCart } = useContext(cartContext);
+    const {addProductFavorites} = useContext(favoritesContext)
     return (
         <div className='card'>
                       <Card key='45' sx={{ maxWidth: 300 }}>
-                          <Link to='/'>
+                          <Link to={`/nftDetails/${product.id}`}>
                           <CardMedia
                                     component="img"
                                     alt="green iguana"
@@ -49,7 +51,6 @@ const NftCard = ({product}) => {
                                                 <span>{product.price} BUSD</span>
                                                 <div>≈ $ {product.price - 1} </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </CardContent>
@@ -57,7 +58,9 @@ const NftCard = ({product}) => {
                                     <Button onClick={() => addProductCart(product)} size="small"
                                             color={checkProductInCart(product.id) ? "success" : "primary"}
                                     >Add to cart</Button>
+                                    <Button onClick={() => addProductFavorites(product)} >
                                     <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
+                                    </Button>
                                 </CardActions>
                             </Card>
         </div>

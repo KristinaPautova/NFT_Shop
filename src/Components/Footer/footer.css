@@ -74,7 +74,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 22px 180px;
+  padding-bottom: 22px ;
   background-color: #f5f5f5;
 }
 
@@ -100,3 +100,24 @@ footer {
   height: 42px;
   font-size: 40px;
 } */
+
+@media all and (max-width: 800px) {
+  .img-binance {
+    display: none;
+  }
+  .text-nft {
+    display: none;
+  }
+  .footer-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .footer-list-item-number {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+}

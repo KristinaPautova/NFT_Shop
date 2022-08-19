@@ -8,6 +8,7 @@ import {nftContext} from "../../context/NFTContextProvider";
 import MenuItem from "@mui/material/MenuItem";
 import {InputLabel, Select} from "@mui/material";
 import FormControl from "@mui/material/FormControl";
+import showToast from "../../helpers/ShowToast";
 
 export default function AddNFT() {
 
@@ -23,6 +24,11 @@ export default function AddNFT() {
     let navigate = useNavigate();
 
     function handleClick (){
+        if (!title || !price || !img || !creator || !owner || !category ) {
+            showToast('Заполните поля', 'error')
+            return;
+        }
+
         let product= {
             title,
             price: +price,

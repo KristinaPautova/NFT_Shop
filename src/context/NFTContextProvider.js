@@ -1,6 +1,6 @@
 import React, {createContext, useReducer} from 'react';
 import axios from "axios";
-import {useLocation} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 const API = "http://localhost:8000/nft";
 
@@ -29,6 +29,7 @@ const NftContextProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, INIT_STATE);
     const location = useLocation()
 
+    const navigate = useNavigate();
 
 
 
@@ -59,20 +60,35 @@ const NftContextProvider = ({children}) => {
 
 
 
-    // const getOneProduct = async (id) => {
-    //     const {data} = await axios(`${API}/${id}`);
-    //     dispatch({
-    //         type: "GET_ONE_PRODUCT",
-    //         payload: data,
-    //     })
-    // }
+    const getOneProduct = async (id) => {
+        const {data} = await axios(`${API}/${id}`);
+        dispatch({
+            type: "GET_ONE_PRODUCT",
+            payload: data,
+        })
+    }
+
+    const deleteProduct = async (id) => {
+        await axios.delete(`${API}/${id}`);
+        getProduct();
+        navigate("/marketPlace");
+    };
+
+    const editProduct = async (id, obj) => {
+        console.log(obj);
+        await axios.patch(`${API}/${id}`, obj);
+        getProduct();
+        navigate("marketPlace");
+    };
 
 
     let cloud = {
+        editProduct,
+        deleteProduct,
         addProduct,
         getProduct,
         editNft,
-        // getOneProduct,
+        getOneProduct,
         productObj: state.product,
         productDetails: state.productDetails,
         pageTotalCount: state.pageTotalCount,

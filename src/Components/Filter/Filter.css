@@ -10,3 +10,26 @@
     justify-content: space-evenly;
     flex-direction: row;
 }
+
+@media all and (max-width: 800px) {
+    .slider__filter {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .slider {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media all and (max-width: 500px){
+    .css-1v5z18m{
+        width: 270px;
+    }
+
+    .css-eg0mwd-MuiSlider-thumb::after{
+        width:20px !important;
+    }
+}
+

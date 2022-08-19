@@ -27,4 +27,9 @@
     color: rgb(252, 53, 60);
 }
 
+@media all and (max-width: 325px){
 
+    .love{
+        display: none;
+    }
+}

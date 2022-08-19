@@ -63,7 +63,7 @@ const LiveSearch = () => {
                 <SearchIconWrapper className="glass">
                     <SearchIcon />
                 </SearchIconWrapper>
-                <StyledInputBase style={{paddingTop: "10px", paddingBottom: "10px",width:'50ch' }} className='search'
+                <StyledInputBase style={{paddingTop: "10px", paddingBottom: "10px" }} className='search'
                     placeholder="Search…"
                     inputProps={{ 'aria-label': 'search' }}
                     value={searchValue}

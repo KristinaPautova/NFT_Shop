@@ -11,16 +11,16 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import logo from '../../image/logo.png';
 import {Link, NavLink} from "react-router-dom";
 import './NavBar.css'
 import {useContext} from "react";
-import {authContext} from "../../context/AuthContext";
+import {admin, authContext} from "../../context/AuthContext";
 import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import {cartContext} from "../../context/CartContextProvider";
+import {favoritesContext} from "../../context/FavoritesContextProvider";
 
 
 
@@ -28,7 +28,9 @@ const NavBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
     const {user, handleLogout} = useContext(authContext);
-    const {cartLength} = useContext(cartContext)
+    const {cartLength} = useContext(cartContext);
+    const {favoritesLength} = useContext(favoritesContext)
+
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -108,30 +110,14 @@ const NavBar = () => {
                             <MenuItem  key="Blog" onClick={handleCloseNavMenu}>
                                 <Typography  textAlign="center">Blog</Typography>
                             </MenuItem>
+                            {admin === user.email && (
                             <MenuItem  key="AddNft" onClick={handleCloseNavMenu}>
                                 <Typography  textAlign="center">Add nft</Typography>
                             </MenuItem>
+                            )}
                         </Menu>
                     </Box>
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-                    <Typography
-                        variant="h5"
-                        noWrap
-                        component="a"
-                        href=""
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        LOGO
-                    </Typography>
+
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <NavLink to='/marketPlace' style={{textDecoration:"none"}}>
                         <Button
@@ -149,6 +135,7 @@ const NavBar = () => {
                         >
                             Blog
                         </Button>
+                        {admin === user.email && (
                         <NavLink to='/addNft' style={{textDecoration:"none"}}>
                         <Button
                             key='addNFT'
@@ -158,14 +145,15 @@ const NavBar = () => {
                             Add nft
                         </Button>
                         </NavLink>
+                        )}
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
 
                         {user &&
                             <>
-                            <NavLink className='love' to="/" >
-                                <Badge style={{marginRight:"20px"}} size="large" badgeContent={cartLength} color="warning">
+                            <NavLink className='love' to="/favorite" >
+                                <Badge style={{marginRight:"20px"}} size="large" badgeContent={favoritesLength} color="warning">
                                     <FavoriteIcon />
                                 </Badge>
                             </NavLink>
