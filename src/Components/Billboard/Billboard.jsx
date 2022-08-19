@@ -17,6 +17,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { EffectFlip, Pagination, Navigation } from "swiper";
+import {Link} from "react-router-dom";
 
 
 const Billboard = () => {
@@ -29,7 +30,10 @@ const Billboard = () => {
                     <div className="left__text">With Binance NFT’s beginner-friendly minting feature,
                         verified Binance users can create their own NFTs in just a
                         few clicks! Start minting your own NFTs with Binance NFT today!</div>
-                    <button>What are NFT</button>
+
+                    <button>
+                        <Link to='/tutorial' style={{textDecoration:"none" , color: "black"}}>What are NFT</Link></button>
+
                 </div>
                 <div className='home__main_right'>
                     <Swiper

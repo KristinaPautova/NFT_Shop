@@ -1,5 +1,6 @@
 import React from "react";
 import "./Content.css";
+import {Link} from "react-router-dom";
 
 const Content = () => {
   return (
@@ -38,7 +39,7 @@ const Content = () => {
           </span>
           </div>
           <div>
-            <button className="first-butt">Full User Guidance</button>
+            <button className="first-butt"><Link to='/tutorial' style={{textDecoration:"none" , color: "black"}}>Tutorial NFT</Link></button>
           </div>
         </div>
         </div>
