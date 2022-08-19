@@ -87,7 +87,7 @@ export default function EditProduct() {
           <TextField
               sx={{ width: 300 }}
               id="outlined-basic"
-              label="Creator"
+              label="Owner"
               variant="outlined"
               value={editOwner}
               onChange={(e) => setEditOwner(e.target.value)}

@@ -1,0 +1,12 @@
+.chat{
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.com_chat{
+    background-color: rgba(143, 143, 143, 0.49);
+    border-radius: 20px;
+    margin-top: 10px;
+}

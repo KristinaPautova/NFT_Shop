@@ -6,8 +6,8 @@
       "title": "Ebisu_Normal",
       "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1655485241035_klv0td3mx2zxf6oqq85y4rly25ld8bq2_400x400.png",
       "creator": "Spirit Land",
-      "owner": "PvP NFT",
-      "price": 45,
+      "owner": "Diana",
+      "price": 450,
       "category": "Collectibles"
     },
     {
@@ -126,7 +126,7 @@
       "title": "Woman Warrior",
       "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656402134518_he57wr78duxr3cavyz444fio1zba9t6j_400x400.png",
       "creator": "Spirit Land",
-      "owner": "PvP NFT",
+      "owner": "Sezim",
       "price": 380,
       "category": "Sports"
     },
@@ -136,7 +136,7 @@
       "title": "NUCLEIC APE ",
       "img": "https://public.nftstatic.com/static/nft/res/nft-cex/S3/1656402053788_307hb7we0czyl1zwcvsy0j2irxshkzj6_400x400.png",
       "creator": "NFTBaza",
-      "owner": "Dom_Bebezito",
+      "owner": "Sezim",
       "price": 679,
       "category": "Collectibles"
     },
@@ -241,5 +241,36 @@
       "category": "Gaming"
     }
   ],
-  "chat": []
+  "chat": [
+    {
+      "comment": "kris super",
+      "data": 1660923967163,
+      "user": "admin@mail.com",
+      "id": 1
+    },
+    {
+      "comment": "what is NFT?",
+      "data": 1660926910987,
+      "user": "admin@mail.com",
+      "id": 2
+    },
+    {
+      "comment": "hello",
+      "data": 1660931133955,
+      "user": "person@gmail.com",
+      "id": 3
+    },
+    {
+      "comment": "world",
+      "data": 1660932063134,
+      "user": "pop@mail.com",
+      "id": 4
+    },
+    {
+      "comment": "world",
+      "data": 1660932080714,
+      "user": "pop@mail.com",
+      "id": 5
+    }
+  ]
 }

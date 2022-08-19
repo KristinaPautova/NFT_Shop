@@ -10,6 +10,7 @@ import EditProduct from "./Components/EditProduct/EditProduct";
 import Favorites from "./Components/Favorites/Favorites";
 import Tutorial from "./Components/Tutorial/Tutorial";
 import Error from "./Components/Error/Error";
+import Chat from "./Components/Chat/Chat";
 
 const MainRouts = () => {
     return (
@@ -23,6 +24,7 @@ const MainRouts = () => {
             <Route path='/marketPlace' element={<NFTList/>}/>
             <Route path='/nftDetails/:id' element={<NftDetails/>}/>
             <Route path='/edit/:id' element={<EditProduct/>}/>
+            <Route path='/chat' element={<Chat/>}/>
             <Route path='*' element={<Error/>}/>
         </Routes>
     );

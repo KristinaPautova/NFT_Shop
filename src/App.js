@@ -7,6 +7,7 @@ import AuthContextProvider from "./context/AuthContext";
 import CartContextProvider from "./context/CartContextProvider";
 import {ToastContainer} from "react-toastify";
 import FavoritesContextProvider from "./context/FavoritesContextProvider";
+import ChatContextProvider from "./context/ChatContextProvider";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <AuthContextProvider>
           <FavoritesContextProvider>
           <CartContextProvider>
+              <ChatContextProvider>
       <NftContextProvider>
          <NavBar/>
           <div style={{marginTop:'50px'}}>
@@ -32,6 +34,7 @@ function App() {
               pauseOnHover={false}
           />
       </NftContextProvider>
+              </ChatContextProvider>
           </CartContextProvider>
           </FavoritesContextProvider>
       </AuthContextProvider>

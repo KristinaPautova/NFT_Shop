@@ -141,6 +141,17 @@ const NavBar = () => {
                         </Button>
                         </NavLink>
                             )}
+                        { user && (
+                            <NavLink to='/chat' style={{textDecoration:"none"}}>
+                                <Button
+                                    key='Feedback'
+                                    onClick={handleCloseNavMenu}
+                                    sx={{ my: 2, color: 'black', display: 'block' }}
+                                >
+                                    Feedback
+                                </Button>
+                            </NavLink>
+                        )}
                         <NavLink to='/tutorial' style={{textDecoration:"none"}}>
                         <Button
                             key='blog'

@@ -119,9 +119,7 @@ const NftDetails = () => {
                                 </div>
                                 </>
                             )}
-
                         </div>
-
                     </div>
                 </div>
             ) : <Box sx={{ display: 'flex' }}>

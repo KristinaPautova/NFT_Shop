@@ -75,7 +75,6 @@ const NftContextProvider = ({children}) => {
     };
 
     const editProduct = async (id, obj) => {
-        console.log(obj);
         await axios.patch(`${API}/${id}`, obj);
         getProduct();
         navigate("marketPlace");
